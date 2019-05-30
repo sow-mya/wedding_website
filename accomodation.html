@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/progress/progress-1.png" type="image/png">
+        <title>Vinay & Sowmya</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <style>
+        #map {
+        margin: auto;
+        height: 500px;
+        width: 75%; 
+         }
+    </style>
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="advice.php">Give Us Advice </a></li>
+                                <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Family</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="vinaypaternal.html">Vinay's Paternal</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="vinaymaternal.html">Vinay's Maternal</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="sowmyapaternal.html">Sowmya's Paternal</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="sowmyamaternal.html">Sowmya's Maternal</a></li>
+                                    </ul>
+                                </li> 
+                            </ul>
+                        </div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner banner_box d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Accomodation</h2>
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="accomodation.html">Accomodation</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Accomodation Area =================-->
+        <section class="act_area p_120">
+        	<div class="container">
+        		<div class="row act_inner">
+        			<div class="col-lg-4">
+        				<div class="progress_item">
+        					<img class="img-fluid" src="img/act/act-1.jpg" alt="">
+        					<div class="progress_text">
+        						<a href="#"><h4>The Taj Coromandel</h4></a>
+        						<p>The Taj Coromandel in Chennai is about 6 minutes from the wedding venue with plenty of options to eat, shop and sightsee.</p>
+        						<div class="date">
+        							<a href="#">Nungambakkam, Chennai</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="progress_item">
+        					<img class="img-fluid" src="img/act/act-2.jpg" alt="">
+        					<div class="progress_text">
+        						<a href="#"><h4>The Park Chennai</h4></a>
+        						<p>The Park Chennai is 7 minutes from the wedding venue and a 9 minute walk to the Taj Coromandel so you can visit and meet up with the other guests.</p>
+        						<div class="date">
+        							<a href="#">Nungambakkam, Chennai</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="progress_item">
+        					<img class="img-fluid" src="img/act/act-3.jpg" alt="">
+        					<div class="progress_text">
+        						<a href="#"><h4>The Taj Club House</h4></a>
+        						<p>The Taj Club House is a great location to explore the city and only 11 minutes from the wedding venue.</p>
+        						<div class="date">
+        							<a href="#">Nungambakkam, Chennai</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Accomodation Area =================-->
+        
+        <!--================Timer Area =================-->
+        <section class="timer_area">
+        <div id="map"></div>
+        <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var emelem = {lat: 13.057053, lng: 80.234330};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: emelem});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: emelem, map: map});
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY8MgH0zS38jwRQL2f4kLDIpa3Z6I401E&callback=initMap">
+        </script>
+    </section>
+        <!--================End Timer Area =================-->
+        
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="container box_1620">
+                <div class="footer_inner p_120">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/flipclock/timer.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
